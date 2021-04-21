@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:background="#EE524F">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/middle"
+        android:background="@drawable/white_rounded_rectangle"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/grey_rounded_rect">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputNumber"
+                android:hint="To: John Doe - 03334569855"
+                android:textSize="15dp"
+                android:textColor="#787676"
+                android:layout_margin="10dp"
+                android:paddingLeft="20dp"
+                android:background="#DDD8D8"
+                android:inputType="text|textNoSuggestions" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message:"
+            android:textSize="17dp"
+            android:textColor="#131313"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"/>
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:hint="Write here..."
+            android:background="@drawable/grey_rounded_rect"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="14dp"
+            android:padding="14dp"
+            android:textSize="15dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_gravity=""
+            android:scrollHorizontally="false"
+            tools:ignore="RtlCompat" />
+        <Button
+            android:id="@+id/buttonSend"
+            android:text="Send"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#EE524F"
+            android:layout_marginTop="8dp"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="6"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/middle"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#EE524F">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="New Message"
+            android:textColor="#FFFF"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
